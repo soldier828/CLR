@@ -1,0 +1,3 @@
+function A = BUILD_MAX_HEAP(A)
+length_A = length(A);
+start = length_A / 2
