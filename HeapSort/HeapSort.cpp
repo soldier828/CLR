@@ -95,10 +95,5 @@ int main(){
 	bool result = Validation(A);
 	std::cout << result << std::endl;
 	
-	for (int i=0;i<100;i++)
-		std::cout <<A[i]<< " ";
-	std::cout << std::endl;
-
-	
 	return 0;
 }

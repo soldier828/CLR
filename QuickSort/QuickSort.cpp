@@ -59,7 +59,7 @@ void READ_DATA_FILE(int A[], string filename){
 		getline(test_txt, line);
 		int buff = atof(line.c_str());
 		A[i-1] = buff;
-		++i;									
+		++i;
 	}
 	test_txt.close();
 }
@@ -67,7 +67,7 @@ void READ_DATA_FILE(int A[], string filename){
 bool Validation(int A[]){
 	for (int i = 0; i < length - 1; i++){
 		if (A[i] > A[i+1])
-			return false;				
+			return false;
 	}
 	return true;
 }
@@ -86,13 +86,12 @@ int main(){
 	RANDOMIZED_QUICKSORT(A, 1, length);
 	finish = clock();
 	totaltime = (double)(finish-start)/CLOCKS_PER_SEC;
-	std::cout<<"\n此程序的运行时间为"<<totaltime<<"秒！"<<std::endl;  
+	std::cout<<"\n此程序的运行时间为"<<totaltime<<"秒！"<<std::endl;
        	bool result = Validation(A);
 	cout << result << endl;
-	
+
 //	for (int i=0;i<10;i++)
 //		cout <<A[i]<< " ";
 //	cout << endl;
 	return 0;
 }
-
