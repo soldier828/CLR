@@ -1,6 +1,5 @@
 #include<iostream>
 #include<fstream>
-#include<time.h>
 #include<string>
 #include<time.h>
 
